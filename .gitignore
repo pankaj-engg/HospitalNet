@@ -1,0 +1,53 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+backend/venv/
+venv/
+ENV/
+env/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# PyTorch and Checkpoints
+*.pt
+*.pth
+# Preserve global model directory structure
+!backend/models/
+
+# Database
+*.db
+*.sqlite3
+hospitalnet.db
+
+# User Uploads and Datasets (Do NOT commit actual patient images)
+backend/uploads/*
+!backend/uploads/.gitkeep
+backend/data/*
+!backend/data/hospital_a/
+!backend/data/hospital_b/
+!backend/data/hospital_c/
+backend/data/*/*/*.jpeg
+backend/data/*/*/*.jpg
+backend/data/*/*/*.png
+
+# Node / Next.js
+frontend/node_modules/
+frontend/.next/
+frontend/out/
+frontend/build/
+.npm
+.eslintcache
+frontend/.env.local
+frontend/.env.*.local
+
+# IDE and OS
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
